@@ -22,7 +22,7 @@ command 1
 
 
 ### Help and Issues  
-Please contact Yifeng Yuan at yuanyifeng@ufl.edu and Colbie J. Reed at colbie.j.reed@gmail.com   
+Please contact Yifeng Yuan at yuanyifeng@ufl.edu or Colbie J. Reed at colbie.j.reed@gmail.com   
 
 ###  Authors
 Colbie J. Reed, Ph.D, Yifeng Yuan, Ph.D., and Valerie de Crecy-Lagard (Principal Investigator)
