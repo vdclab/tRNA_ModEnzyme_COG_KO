@@ -1,12 +1,12 @@
 ### Description  
 This project contains commands and scripts that haven been generated and used for Queuosine gene/protein analyses in the manuscript:   
-### “Comparative Genomics Analyses of Bacterial tRNA Modification Protein Families Using Clusters of Orthologous Genes (COG) and KEGG Orthology (KO) Classification Systems”   
+#### "Comparative Genomics Analyses of Bacterial tRNA Modification Protein Families Using Clusters of Orthologous Genes (COG) and KEGG Orthology (KO) Classification Systems"   
 Authors: Colbie J. Reed, Yifeng Yuan, and Valérie de Crécy-Lagard   
 
 ### Dependencies   
-python v3.13 https://www.python.org/
-MAFFT https://mafft.cbrc.jp/alignment/server/index.html
-conda packages: gtdbtk-2.4.0
+python v3.13 https://www.python.org/   
+MAFFT https://mafft.cbrc.jp/alignment/server/index.html   
+conda packages: gtdbtk-2.4.0   
 
 ### Usage   
 1. xxxx
