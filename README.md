@@ -5,35 +5,40 @@ Authors: Colbie J. Reed, Yifeng Yuan, and Valérie de Crécy-Lagard
 
 ### Dependencies   
 python v3.13 https://www.python.org/   
+NCBI dataset https://www.ncbi.nlm.nih.gov/datasets/docs/v2/command-line-tools/download-and-install/   
+checkM2 https://github.com/chklovski/CheckM2   
 MAFFT https://mafft.cbrc.jp/alignment/server/index.html   
 conda packages: gtdbtk-2.4.0   
 
+
 ### Usage   
 1. phylogenetic analysis
-1.1. Download genomes
 
 ```bash
+# 1.1 Download genomes
 cd tree
 download_genomes_datasets.sh data/1322accessions.txt
 
-# move genome fasta files to a folder
+# move downloaded genome fasta files to a folder. Replace soft link with fna files.
+
+# 1.2 Quality check
 dir_genome=${folder of the genomes}
 
 # Runs CheckM2 on your genome folder and keeps the genomes with at least 90% completeness, at most 5% contamination, and at least 0.1 Mb (100,000 bp) total length.
 checkm2_filter.sh -g ${dir_genome} -o checkm2_out -t 2
 
-# build tree
-
+# 1.3 build tree
 gtdbtk_fasttree_wag.sh checkm2_out
+#output is tree/gtdbtk_out/bac120.fasttree.unrooted.tree
 ```
-output is tree/gtdbtk_out/bac120.fasttree.unrooted.tree
 
-The output tree can be visualized in iTOL v6.8 (https://itol.embl.de/) using the annotation files:
-tree/taxid_tgtbinary_TrmAFO_thick.txt
-tree/taxid_tgtbinary_mnmEGA_thick.txt
+The output tree (tree/bac120.fasttree.unrooted.tree as demo) can be visualized in iTOL v6.8 (https://itol.embl.de/) using the annotation files:
+tree/taxid_tgtbinary_TrmAFO_thick.txt (show the presence of COG and KO of TrmA, TrmFO )
+tree/taxid_tgtbinary_mnmEGA_thick.txt (show the presence of COG and KO of MnmE, MnmG, and MnmA)
 tree/treelabel_phylum.txt
 
-2. xxxx
+2. COG and KO concordance
+
 
 ### Help and Issues  
 Please contact Yifeng Yuan at yuanyifeng@ufl.edu or Colbie J. Reed at colbie.j.reed@gmail.com   
