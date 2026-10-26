@@ -9,7 +9,8 @@ MAFFT https://mafft.cbrc.jp/alignment/server/index.html
 conda packages: gtdbtk-2.4.0   
 
 ### Usage   
-1. Download genomes
+1. phylogenetic analysis
+1.1. Download genomes
 
 ```bash
 cd tree
@@ -20,7 +21,17 @@ dir_genome=${folder of the genomes}
 
 # Runs CheckM2 on your genome folder and keeps the genomes with at least 90% completeness, at most 5% contamination, and at least 0.1 Mb (100,000 bp) total length.
 checkm2_filter.sh -g ${dir_genome} -o checkm2_out -t 2
+
+# build tree
+
+gtdbtk_fasttree_wag.sh checkm2_out
 ```
+output is tree/gtdbtk_out/bac120.fasttree.unrooted.tree
+
+The output tree can be visualized in iTOL v6.8 (https://itol.embl.de/) using the annotation files:
+tree/taxid_tgtbinary_TrmAFO_thick.txt
+tree/taxid_tgtbinary_mnmEGA_thick.txt
+tree/treelabel_phylum.txt
 
 2. xxxx
 
