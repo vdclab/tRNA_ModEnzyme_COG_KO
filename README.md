@@ -32,12 +32,12 @@ gtdbtk_fasttree_wag.sh checkm2_out
 #output is tree/gtdbtk_out/bac120.fasttree.unrooted.tree
 ```
 
-The output tree (tree/bac120.fasttree.unrooted.tree as demo) can be visualized in iTOL v6.8 (https://itol.embl.de/) using the annotation files:
-tree/taxid_tgtbinary_TrmAFO_thick.txt (show the presence of COG and KO of TrmA, TrmFO )
-tree/taxid_tgtbinary_mnmEGA_thick.txt (show the presence of COG and KO of MnmE, MnmG, and MnmA)
-tree/treelabel_phylum.txt
+The output tree (tree/bac120.fasttree.unrooted.tree as demo) can be visualized in iTOL v6.8 (https://itol.embl.de/) using the annotation files:   
+tree/taxid_tgtbinary_TrmAFO_thick.txt (show the presence of COG and KO of TrmA, TrmFO )   
+tree/taxid_tgtbinary_mnmEGA_thick.txt (show the presence of COG and KO of MnmE, MnmG, and MnmA)   
+tree/treelabel_phylum.txt   
 
-2. COG and KO concordance
+2. COG and KO concordance   
 ``` bash
 cd concordance
 
