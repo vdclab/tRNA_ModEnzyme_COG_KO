@@ -9,9 +9,10 @@ MAFFT https://mafft.cbrc.jp/alignment/server/index.html
 conda packages: gtdbtk-2.4.0   
 
 ### Usage   
-1. xxxx
+1. Download genomes
+
 ```bash
-command 1
+download_genomes_datasets.sh data/accessions.txt
 ```
 
 2. xxxx
