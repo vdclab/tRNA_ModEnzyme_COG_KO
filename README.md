@@ -93,6 +93,18 @@ python script_ols_equation.py
 # output: printed equation + ols_equation_dosage_prevalence.tsv in ko_copy_prevalence/
 ```
 
+4. Genome size correlation
+
+```bash
+cd genome_size
+
+# Correlation between tRNA-modification KO presence and genome size.
+python script_ko_size_correlation.py
+# output: in the ko_size_correlation folder: ko_size_correlation.tsv, sum_ko_size_correlation.tsv, correlation_linear_vs_log_long.tsv, correlation_linear_vs_log_wide.tsv, ko_size_correlation_by_phylum.tsv, fig1_sum_vs_size.png, fig2_per_ko_correlations.png, fig3_linear_vs_log_examples.png.
+```
+
+5. Traits correlation
+
 ### Help and Issues  
 Please contact Yifeng Yuan at yuanyifeng@ufl.edu or Colbie J. Reed at colbie.j.reed@gmail.com   
 
