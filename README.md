@@ -7,7 +7,9 @@ python v3.13 https://www.python.org/
 NCBI dataset https://www.ncbi.nlm.nih.gov/datasets/docs/v2/command-line-tools/download-and-install/   
 checkM2 https://github.com/chklovski/CheckM2   
 MAFFT https://mafft.cbrc.jp/alignment/server/index.html   
-conda packages: gtdbtk-2.4.0   
+conda packages: 
+    gtdbtk-2.4.0   
+    matplotlib>=3.9
 
 
 ### Usage   
