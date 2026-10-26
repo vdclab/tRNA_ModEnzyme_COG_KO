@@ -41,10 +41,17 @@ tree/treelabel_phylum.txt
 ``` bash
 cd concordance
 
+# calculate the prevalence of COG or KO per phylum
+# Cell value (%) = (number of genomes in that phylum with the key present) / (total number of genomes in the matrix) * 100
 python presence_by_phylum.py COG_AP.txt KO_AP.txt genome_phylum.txt results
 
+# calculate the concordance of COG and KO per genome. Build a genome x (COG|KO pair) agreement matrix.
+# 1=jointly presence or absence; 0= disagreement between COG and KO presence.
+# For pairs where only one key is in the matrices: the column holds that key's own presence (1) / absence (0); the missing counterpart is not counted.
 python cog_ko_agreement.py COG_AP.txt KO_AP.txt COG_KO_pair.txt results/concordance.tsv
 
+# Explore COG-KO concordance across genomes and phyla.
+# phyla with fewer genomes are pooled as "Other" in plots.
 python cog_ko_explore.py COG_AP.txt KO_AP.txt COG_KO_pair.txt genome_phylum.txt results
 
 python pipeline_cog_ko_agreement.py
