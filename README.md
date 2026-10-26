@@ -1,4 +1,4 @@
-### Description  
+<img width="1429" height="260" alt="image" src="https://github.com/user-attachments/assets/b24b36aa-0580-4cde-b116-8d556dbf7b10" />### Description  
 This project contains commands and scripts that haven been generated and used for Queuosine gene/protein analyses in the manuscript:   
 #### "Comparative Genomics Analyses of Bacterial tRNA Modification Protein Families Using Clusters of Orthologous Genes (COG) and KEGG Orthology (KO) Classification Systems"   
 Authors: Colbie J. Reed, Yifeng Yuan, and Valérie de Crécy-Lagard   
@@ -38,6 +38,19 @@ tree/taxid_tgtbinary_mnmEGA_thick.txt (show the presence of COG and KO of MnmE, 
 tree/treelabel_phylum.txt
 
 2. COG and KO concordance
+``` bash
+cd concordance
+
+python presence_by_phylum.py COG_AP.txt KO_AP.txt genome_phylum.txt results
+
+python cog_ko_agreement.py COG_AP.txt KO.txt key_AP.txt results/concordance.tsv
+
+python cog_ko_explore.py COG_AP.txt KO_AP.txt COG_KO_pair.txt genome_phylum.txt results
+
+python pipeline_cog_ko_agreement.py
+
+```
+
 
 
 ### Help and Issues  
