@@ -43,7 +43,7 @@ cd concordance
 
 python presence_by_phylum.py COG_AP.txt KO_AP.txt genome_phylum.txt results
 
-python cog_ko_agreement.py COG_AP.txt KO.txt key_AP.txt results/concordance.tsv
+python cog_ko_agreement.py COG_AP.txt KO_AP.txt COG_KO_pair.txt results/concordance.tsv
 
 python cog_ko_explore.py COG_AP.txt KO_AP.txt COG_KO_pair.txt genome_phylum.txt results
 
