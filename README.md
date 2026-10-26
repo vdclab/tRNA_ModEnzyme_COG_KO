@@ -12,7 +12,7 @@ conda packages: gtdbtk-2.4.0
 1. Download genomes
 
 ```bash
-download_genomes_datasets.sh data/accessions.txt
+download_genomes_datasets.sh data/1322accessions.txt
 ```
 
 2. xxxx
