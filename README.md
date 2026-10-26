@@ -12,15 +12,17 @@ conda packages: gtdbtk-2.4.0
 1. Download genomes
 
 ```bash
+cd tree
 download_genomes_datasets.sh data/1322accessions.txt
+
+# move genome fasta files to a folder
+dir_genome=${folder of the genomes}
+
+# Runs CheckM2 on your genome folder and keeps the genomes with at least 90% completeness, at most 5% contamination, and at least 0.1 Mb (100,000 bp) total length.
+checkm2_filter.sh -g ${dir_genome} -o checkm2_out -t 2
 ```
 
 2. xxxx
-```bash
-command 1
-```
-
-
 
 ### Help and Issues  
 Please contact Yifeng Yuan at yuanyifeng@ufl.edu or Colbie J. Reed at colbie.j.reed@gmail.com   
