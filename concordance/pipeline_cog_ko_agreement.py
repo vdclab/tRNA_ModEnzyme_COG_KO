@@ -48,10 +48,10 @@ from sklearn.decomposition import PCA
 from scipy.stats import spearmanr
 
 # ---------------------------------------------------------------- configuration
-INPUT_DIR = "/mnt/user-uploads"
-OUTPUT_DIR = "/mnt/results/cog_ko_agreement"
-WORK_DIR = "/workspace/cog_ko/pipeline_out"   # local scratch (S3 mount cannot overwrite)
-MIN_PHYLUM_GENOMES = 10                        # phyla below this pooled as "Other (<10)"
+INPUT_DIR = "."
+OUTPUT_DIR = "./pipeline_out"
+WORK_DIR = "./pipeline_out"   # local scratch (S3 mount cannot overwrite)
+MIN_PHYLUM_GENOMES = 10                          # phyla below this pooled as "Other (<10)"
 
 plt.rcParams["font.family"] = ["Liberation Sans", "DejaVu Sans"]
 plt.rcParams["svg.fonttype"] = "none"
