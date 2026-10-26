@@ -104,6 +104,36 @@ python script_ko_size_correlation.py
 ```
 
 5. Traits correlation
+Tree rooted at Aquificota (root.txt) or middle point BEFORE phylogenetic regression.
+
+```bash
+python 01_prepare_data.py
+
+Rscript 02_trait_pathway.R
+
+Rscript 03_pathway_pathway.R
+
+Rscript 05_per_phylum.R
+
+python 06_figures.py
+
+Rscript 08_ko_ko_within_pathway.R
+
+python 09_ko_ko_figures.py
+
+Rscript 10_ko_ko_by_trait.R
+
+python 11_ko_ko_grid_by_trait.py
+
+Rscript 12_pathway_pathway_by_trait.R
+
+python 13_pathway_pathway_grid_by_trait.py
+
+R script 14_pathway_category_directions.R
+
+python ko_ko_estimate_15_pathway_grid.py
+
+```
 
 ### Help and Issues  
 Please contact Yifeng Yuan at yuanyifeng@ufl.edu or Colbie J. Reed at colbie.j.reed@gmail.com   
