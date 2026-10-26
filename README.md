@@ -59,7 +59,39 @@ python pipeline_cog_ko_agreement.py
 
 ```
 
+3. paralog
+```
+# 3.1 convert list of locus rags to matrix (genome x locus_tag)
+cd locus_tag
 
+python data/COG.txt COG_tag.txt
+python data/KO.txt KO_tag.txt
+
+# 3.2 paralog stats
+# with COG_count.txt, KO_count.txt, genome_phylum.txt in the same directory
+cd ../paralog
+
+run_count_distribution.sh 
+
+# output: results/_count_distribution.tsv, results/count_distribution_by_phylum.tsv, results/_phylum_groups.tsv, results/_count_distribution_heatmap.png, results/_count_distribution_by_phylum_heatmap.png
+# results/COG_mean_copy_by_phylum.tsv, results/KO_mean_copy_by_phylum.tsv, results/COG_KO_mean_copy_heatmap.png
+
+# calculate correlation between KO prevalence and copy-number-when-present across KOs:
+python script_correlation_dosage_prevalence.py
+# output: ko_copy_prevalence/output correlation_dosage_prevalence.tsv
+
+# KO copy-number vs prevalence analysis across bacterial genomes.
+python script_ko_prevalence.py
+# output: ko_copy_prevalence/fig1_overall_vs_phylum_mean.png, output: ko_copy_prevalence/fig2_top_heterogeneous.png, ko_copy_prevalence/ko_prevalence_copynumber.tsv, ko_copy_prevalence/ko_prevalence_by_phylum.tsv
+
+# generate figure 3. KO prevalence vs copy-number-when-present are uncorrelated.
+python script_correlation_dosage_prevalence.py
+# output: ko_copy_prevalence/fig3_dosage_vs_prevalence.svg/.png and ko_copy_prevalence/fig3_dosage_vs_prevalence_points.tsv
+
+# OLS regression equation for fig3 (dosage-when-present ~ prevalence).
+python script_ols_equation.py
+# output: printed equation + ols_equation_dosage_prevalence.tsv in ko_copy_prevalence/
+```
 
 ### Help and Issues  
 Please contact Yifeng Yuan at yuanyifeng@ufl.edu or Colbie J. Reed at colbie.j.reed@gmail.com   
