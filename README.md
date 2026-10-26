@@ -1,4 +1,3 @@
-<img width="1429" height="260" alt="image" src="https://github.com/user-attachments/assets/b24b36aa-0580-4cde-b116-8d556dbf7b10" />### Description  
 This project contains commands and scripts that haven been generated and used for Queuosine gene/protein analyses in the manuscript:   
 #### "Comparative Genomics Analyses of Bacterial tRNA Modification Protein Families Using Clusters of Orthologous Genes (COG) and KEGG Orthology (KO) Classification Systems"   
 Authors: Colbie J. Reed, Yifeng Yuan, and Valérie de Crécy-Lagard   
