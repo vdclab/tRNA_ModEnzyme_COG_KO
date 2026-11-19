@@ -103,9 +103,7 @@ python script_ko_size_correlation.py
 # output: in the ko_size_correlation folder: ko_size_correlation.tsv, sum_ko_size_correlation.tsv, correlation_linear_vs_log_long.tsv, correlation_linear_vs_log_wide.tsv, ko_size_correlation_by_phylum.tsv, fig1_sum_vs_size.png, fig2_per_ko_correlations.png, fig3_linear_vs_log_examples.png.
 ```
 
-5. Traits ~ modification correlation
-
-#### Analysis scripts — tRNA modification presence/absence vs genome traits and between modifications
+5.  genome traits a~ tRNA modification presence/absence correlation   
 
 All scripts are self-contained R scripts (R 4.4.2; phylolm 2.6.5, ape 5.8.1, phytools 2.5.2, ggplot2 4.0.3).
 Inputs are read from `/mnt/user-uploads/input_v4/` (`mod_AP.txt`, `genome_traits.txt`, `select_trait.txt`,
