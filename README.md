@@ -105,7 +105,7 @@ python script_ko_size_correlation.py
 
 5. Traits ~ modification correlation
 
-# Analysis scripts — tRNA modification presence/absence vs genome traits and between modifications
+#### Analysis scripts — tRNA modification presence/absence vs genome traits and between modifications
 
 All scripts are self-contained R scripts (R 4.4.2; phylolm 2.6.5, ape 5.8.1, phytools 2.5.2, ggplot2 4.0.3).
 Inputs are read from `/mnt/user-uploads/input_v4/` (`mod_AP.txt`, `genome_traits.txt`, `select_trait.txt`,
@@ -123,9 +123,9 @@ Shared design elements across all scripts:
   with the highest penalized log-likelihood among converged starts is kept.
 - Flags file lists every tested/untested unit with reasons and result flags.
 
-## Scripts
+### Scripts
 
-| # | Script | Analysis | Rooting | Outputs |
+| ## | Script | Analysis | Rooting | Outputs |
 |---|--------|----------|---------|---------|
 | 1 | `01_mod_as_response_midpoint.R` | Binary trait ~ modification, modification as response (mod ~ trait) | midpoint (per pruned trait tree) | `trait_mod_correlation/` |
 | 2 | `02_trait_as_response_midpoint.R` | Binary trait ~ modification, trait as response (trait ~ mod) | midpoint (per pruned trait tree) | `trait_mod_correlation_v2_trait_response/` |
