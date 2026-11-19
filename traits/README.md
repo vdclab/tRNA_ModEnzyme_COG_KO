@@ -1,8 +1,8 @@
 ### Analysis scripts — tRNA modification presence/absence vs genome traits and between modifications
 
 All scripts are self-contained R scripts (R 4.4.2; phylolm 2.6.5, ape 5.8.1, phytools 2.5.2, ggplot2 4.0.3).
-Inputs are read from `/mnt/user-uploads/input_v4/` (`mod_AP.txt`, `genome_traits.txt`, `select_trait.txt`,
-`bac120.fasttree.unrooted.tree`) and, for the Aquificota-rooted scripts, `/mnt/user-uploads/root.txt`.
+Inputs are read from `traits/` (`mod_AP.txt`, `genome_traits.txt`, `select_trait.txt`,
+`bac120.fasttree.unrooted.tree`) and, for the Aquificota-rooted scripts, `traits/root.txt`.
 Run each with `Rscript <script>.R`. Outputs are written to the `/mnt/results/` folders listed below.
 
 Shared design elements across all scripts:
