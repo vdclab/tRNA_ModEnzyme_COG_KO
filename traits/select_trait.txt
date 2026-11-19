@@ -1,0 +1,4 @@
+Gram_Stain	binary
+Motility	binary
+Oxygen_Req.	Categorical
+Growth_Temp_Category	Categorical
